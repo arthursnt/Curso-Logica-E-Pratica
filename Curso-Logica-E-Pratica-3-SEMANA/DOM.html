@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script src="DOM.js"></script>
+</head>
+<body>
+    
+    <select id="produtos" onchange="atualizarPreco()">
+        <option value="80">Camisa 1 - Branca Fade - R$80,00</option>
+        <option value="120">Camisa 2 - All Black - R$120,00</option>
+        <option value="90">Camisa 3 - Listrada - R$90,00</option>
+    </select>
+
+    <p>Você selecionou -> R$ <span id="resultadoPreco">50</span>,00 </p>
+
+</body>
+</html>
