@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <style>
+        #caixa{
+            background-color: black;
+            width: 200px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        <p>VAI CORINTHIANS!!!</p>
+    </div>
+
+    <button onclick="destacarDiv()">Destacar</button>
+
+    <script>
+        function destacarDiv(){
+            let caixa = document.getElementById('caixa')
+            caixa.style.backgroundColor = 'grey'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <style>
+        .destaque{
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p id="Texto">VAI CORINTHIANS!!!</p>
+    <button onclick="aumentarTexto()">Aumentar</button>
+
+    <script>
+        function aumentarTexto(){
+            let texto = document.getElementById('Texto');
+            texto.classList.toggle("destaque")
+        }
+    </script>
+</body>
+</html>
