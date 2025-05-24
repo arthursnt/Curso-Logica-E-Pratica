@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoubleClick Background</title>
+    <style>
+        .clique1{
+            background-color: black;
+        }
+        .clique2{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body id="corpo">
+    <button id="click">Clique Uma ou Duas Vezes</button>
+
+    <script>
+        let click1 = document.getElementById('click1')
+        let click2 = document.getElementById('click2')
+        
+        click.addEventListener('click', function(){
+            corpo.style.backgroundColor = "black"
+        } );
+
+        click.addEventListener('dblclick', function(){
+            corpo.style.backgroundColor = "blue"
+        } );
+
+    </script>
+</body>
+</html>

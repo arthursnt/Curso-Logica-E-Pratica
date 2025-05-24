@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem</title>
+</head>
+<body>
+
+    <h1>Só ira exibir após aperta o botão abaixo</h1>
+    <button id="botao">Aqui</button>
+    <p id="mensagem"></p>
+
+    <script>
+
+        document.getElementById('botao').addEventListener('click',function(){
+            setTimeout(()=>{
+                document.getElementById('mensagem').textContent = "Hello World"
+            },3000)
+        })
+
+    </script>
+</body>
+</html>

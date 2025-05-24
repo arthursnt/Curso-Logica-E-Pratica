@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoubleClick</title>
+</head>
+<body>
+    <button id="click">Clique Uma ou Duas Vezes</button>
+    <p id="click1"></p>
+    <p id="click2"></p>
+
+    <script>
+        let click1 = document.getElementById('click1')
+        let click2 = document.getElementById('click2')
+        
+        click.addEventListener('click', function(){
+            click1.textContent = "Você clicou uma vez!";
+        } );
+
+        click.addEventListener('dblclick', function(){
+            click2.textContent = "Você clicou duas vezes!";
+        } );
+
+    </script>
+</body>
+</html>
