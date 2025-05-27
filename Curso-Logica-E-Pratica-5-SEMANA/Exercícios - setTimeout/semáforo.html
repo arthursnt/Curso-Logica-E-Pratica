@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo</title>
+    <style>
+        .semaforo{
+            width: 200px;
+            height: 500px;
+            background-color: rgb(32, 32, 32);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .luz{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: rgb(126, 125, 125);
+            margin: auto;
+        }
+        .red-on{
+            background-color: red;
+        }
+        .yellow-on{
+            background-color: yellow;
+        }
+        .blue-on{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Semáforo</h1>
+    <div class ="semaforo">
+        <div id="red" class="luz"></div>
+        <div id="yellow" class="luz"></div>
+        <div id="blue" class="luz"></div>
+    </div>
+    <button id="btn-iniciar">Iniciar</button>
+
+    <script>
+
+        const luzRed = document.getElementById('red')
+        const luzYellow = document.getElementById('yellow')
+        const luzBlue = document.getElementById('blue')
+
+        function apagarTodas(){
+            luzRed.className = 'luz'
+            luzYellow.className = 'luz'
+            luzBlue.className = 'luz'
+        }
+
+        document.getElementById('btn-iniciar').addEventListener('click', ()=>{
+            apagarTodas();
+            luzBlue.classList.add('blue-on')
+
+            setTimeout(()=>{
+                apagarTodas();
+                luzYellow.classList.add('yellow-on')
+            },2000)
+
+            setTimeout(()=>{
+                apagarTodas();
+                luzRed.classList.add('red-on')
+            },3000)
+        })
+
+    </script>
+
+</body>
+</html>
